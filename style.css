@@ -292,6 +292,7 @@ do conteúdo ou apareça no fim*/
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 20px;
     }
+}
 
     @media (max-width: 480px){
         .grid-cursos-detalhes{
