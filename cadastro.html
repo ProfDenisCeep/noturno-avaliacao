@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Estudante - Glassmorphism</title>
+    <meta name="description" content="Formulário de cadastro para inscrição em cursos técnicos integrados e subsequentes.">
+    <title>Cadastro de Estudante - CEEP Cianorte</title>
     <link rel="stylesheet" href="./cadastro.css">
 </head>
 <body>
-    <div class="background-blobs"></div> <main class="container">
+    <div class="background-blobs"></div>
+    <main class="container">
         <form id="cadastroForm" class="glass-card">
             <h1>Cadastro de Estudante</h1>
             
@@ -63,9 +65,35 @@
         </form>
     </main>
 
-    <script>
+    <script defer>
         document.getElementById('cadastroForm').addEventListener('submit', function(e) {
             e.preventDefault();
+            
+            // Validação de campos obrigatórios
+            const nome = document.getElementById('nome')?.value.trim();
+            const modalidade = document.querySelector('input[name="modalidade"]:checked');
+            const selects = this.querySelectorAll('.row.courses select');
+            const tel1 = document.getElementById('tel1')?.value.trim();
+            
+            // Verificar se todos os campos foram preenchidos
+            if (!nome || !modalidade || !tel1) {
+                alert('⚠️ Por favor, preencha todos os campos obrigatórios!');
+                return;
+            }
+            
+            // Validar que todos os selects foram preenchidos
+            let selectsValid = true;
+            selects.forEach(select => {
+                if (!select.value) {
+                    selectsValid = false;
+                }
+            });
+            
+            if (!selectsValid) {
+                alert('⚠️ Por favor, escolha uma opção de curso para cada seletor!');
+                return;
+            }
+            
             alert('✅ Cadastro realizado com sucesso!');
             this.reset();
         });

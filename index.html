@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<!--1° - trocar a linguagem-->
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de inscrição para cursos técnicos integrados e subsequentes no CEEP Cianorte.">
+    <meta name="theme-color" content="#cc0000">
+    <meta name="author" content="CEEP Cianorte">
 
-    <!--link para icones do favicon-->
+    <!--favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
-    <!--2º colocar o nome ceep 2026 no navegador-->
     <link rel="shortcut icon" href="./CEEPlogobrasao-main/logoceep/favicon-16x16.png" type="image/x-icon">
-    <title>CEEP 2026</title>
-    <!--3°link do css, acrescentar ./-->
+    <title>CEEP Cianorte 2026 - Ensino Técnico de Excelência</title>
+    <link rel="preload" as="style" href="./style.css">
     <link rel="stylesheet" href="./style.css">
-    <!--link para icones externos-->
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 
 <body>
-    <!--4° inserir as tag's de marcação-->
     <header>
         <!--inserindo um classe para estilização do logo-->
         <div class="logo-container">
@@ -31,25 +30,20 @@
         </div>
         <nav>
             <div class="header-actions">
-                <a href="https://www.areadoaluno.seed.pr.gov.br/servicosaoaluno/pages/publico/login.jsf"
-                target="_blank"
-                class="btn-matricula">Matricule-se PR</a>
+                <a href="https://www.areadoaluno.seed.pr.gov.br/servicosaoaluno/pages/publico/login.jsf" target="_blank" rel="noopener noreferrer" class="btn-matricula">Matricule-se PR</a>
             </div>
         </nav>
     </header>
-    <!--Area dividida-->
     <section class="hero">
-        <div class="hero-ilustration">
+        <div class="hero-ilustration" aria-hidden="true">
             <i class="fas fa-user-graduate"></i>
             <i class="fas fa-microscope"></i>
             <i class="fas fa-laptop-code"></i>
-
         </div>
         <h1>Ensino Profissional de Excelência</h1>
     </section>
-    <!--carregando parte principal-->
     <main class="container-categorias">
-        <div class="card-categoria">
+        <div class="card-categoria card-integrado">
             <div class="icon-box">
                 <i class="fas fa-book-read"></i>
             </div>
@@ -59,39 +53,17 @@
                 o 9° ano. Formação técnica e
                 regular em um único curso.
             </p>
-            <ul style="list-style: nome; margin-top: 1rem;
-            text-align: left;">
-                <li>
-                    <i class="fas fa-check-circle" style="color: var(--azul-estado)">
-                    </i>
-                    Vestuário
-                </li>
-                <li>
-                    <i class="fas fa-check-circle" style="color: var(--azul-estado)">
-                    </i>
-                    Química
-
-                </li>
-                <li>
-                    <i class="fas fa-check-circle" style="color: var(--azul-estado)">
-                    </i>
-                    Farmácia
-                </li>
-                <li>
-                    <i class="fas fa-check-circle" style="color: var(--azul-estado)">
-                    </i>
-                    Des. Sistemas
-                </li>
-                <li>
-                    <i class="fas fa-check-circle" style="color: var(--azul-estado)">
-                    </i>
-                    I.A e Dados
-                </li>
+            <ul class="curso-lista integrado">
+                <li><i class="fas fa-check-circle"></i> Vestuário</li>
+                <li><i class="fas fa-check-circle"></i> Química</li>
+                <li><i class="fas fa-check-circle"></i> Farmácia</li>
+                <li><i class="fas fa-check-circle"></i> Des. Sistemas</li>
+                <li><i class="fas fa-check-circle"></i> I.A e Dados</li>
             </ul>
-            <a href="./integrado.html" class="btn" id=" l11">Ver Cursos</a>
+            <a href="./integrado.html" class="btn">Ver Cursos</a>
         </div>
 
-        <div class="card-categoria subsequente">
+        <div class="card-categoria card-subsequente">
             <div class="icon-box">
                 <i class="fas fa-user-tie"></i>
             </div>
@@ -101,39 +73,13 @@
                 e busca especialização técnica
                 rápida para o mercado de trabalho.
             </p>
-            <ul style="list-style: nome; margin-top: 1rem;
-            text-align: left;">
-                <li>
-                    <i class="fas fa-check-circle" style="color: var(--verde-estado)">
-                    </i>
-                    Enfermagem
-                </li>
-                <li>
-                    <i class="fas fa-check-circle" style="color: var(--verde-estado)">
-                    </i>
-                    Segurança do Trabalho
-
-                </li>
-                <li>
-                    <i class="fas fa-check-circle" style="color: var(--verde-estado)">
-                    </i>
-                    Recursos Humanos
-                </li>
-                <li>
-                    <i class="fas fa-check-circle" style="color: var(--verde-estado)">
-                    </i>
-                    Des. Sistemas
-                </li>
-                <li>
-                    <i class="fas fa-check-circle" style="color: var(--verde-estado)">
-                    </i>
-                    Administração
-                </li>
-                <li>
-                    <i class="fas fa-check-circle" style="color: var(--verde-estado)">
-                    </i>
-                    Vestuário
-                </li>
+            <ul class="curso-lista subsequente">
+                <li><i class="fas fa-check-circle"></i> Enfermagem</li>
+                <li><i class="fas fa-check-circle"></i> Segurança do Trabalho</li>
+                <li><i class="fas fa-check-circle"></i> Recursos Humanos</li>
+                <li><i class="fas fa-check-circle"></i> Des. Sistemas</li>
+                <li><i class="fas fa-check-circle"></i> Administração</li>
+                <li><i class="fas fa-check-circle"></i> Vestuário</li>
             </ul>
             <a href="./subsequente.html" class="btn">Ver Cursos</a>
         </div>
@@ -143,7 +89,7 @@
             <div class="footer-box">
                 <h3>CEEP Cianorte</h3>
                 <p>R. Dom Pedro II, 1550 - Zona 01</p>
-                <p>Cianorte - PR| (44) 3631-9685</p>
+                <p>Cianorte - PR | <a href="tel:+5544363196850" class="footer-link">(44) 3631-9685</a></p>
             </div>
             <div class="footer-box">
                 <h3>Conecte-se</h3>
@@ -166,6 +112,7 @@
             <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
+    <script defer src="./script.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');

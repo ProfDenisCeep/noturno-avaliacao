@@ -152,7 +152,7 @@ do conteúdo ou apareça no fim*/
     background-color: rgba(0, 0, 0, 0.2);
 }
 /*responsividade*/
-@media (max-width: 768){
+@media (max-width: 768px){
     .footer-container{
         flex-direction: column;
         text-align: center;
@@ -302,3 +302,39 @@ do conteúdo ou apareça no fim*/
             padding: 20px;
         }
     }
+
+/* Estilos para listas de cursos */
+.curso-lista{
+    list-style: none;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.curso-lista li{
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.curso-lista i{
+    margin-right: 0.75rem;
+}
+
+.card-integrado .curso-lista i{
+    color: var(--azul-estado);
+}
+
+.card-subsequente .curso-lista i{
+    color: var(--amarelo-ceep);
+}
+
+/* Melhorias de acessibilidade */
+.footer-link{
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer-link:hover{
+    opacity: 0.8;
+}
